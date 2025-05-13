@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>敲木魚</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>功德 +<span id="count">0</span></h1>
+
+    <!-- 木魚按鈕 -->
+    <button id="fish-btn" aria-label="敲木魚">
+      <!-- 若想離線放本地檔，下載 fish.svg 並改這行 -->
+      <!-- <img src="fish.svg" alt="木魚" id="fish-img"> -->
+
+      <!-- 線上木魚圖示 -->
+      <img src="https://www.svgrepo.com/show/10140/decorative-wooden-fish.svg"
+           alt="木魚" id="fish-img">
+    </button>
+  </div>
+
+  <!-- 木魚音效：缺檔時自動 fallback 為合成音 -->
+  <audio id="fish-sound" preload="auto">
+    <source src="assets/wooden_fish.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

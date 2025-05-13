@@ -1,0 +1,29 @@
+body{
+    font-family:'Noto Sans TC',sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    background:#f5f3ef;
+  }
+  .container{
+    text-align:center;
+  }
+  #fish-btn{
+    background:none;
+    border:none;
+    cursor:pointer;
+  }
+  #fish-img{
+    width:200px;
+    transition:transform 0.05s;
+  }
+  #fish-btn:active #fish-img{
+    transform:scale(0.95);
+  }
+  h1{
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  
